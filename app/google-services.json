@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "682671405411",
+    "firebase_url": "https://avaliacaoelias.firebaseio.com",
+    "project_id": "avaliacaoelias",
+    "storage_bucket": "avaliacaoelias.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:682671405411:android:8683c104d2a81b9e",
+        "android_client_info": {
+          "package_name": "com.example.pedrokuchpil.avaliacaoelias"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "682671405411-431cj99jp4r0fkqkj6fjfnuq72a6pr52.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pedrokuchpil.avaliacaoelias",
+            "certificate_hash": "9cf2a84f95c97570b998cf30f3c36423cda134d4"
+          }
+        },
+        {
+          "client_id": "682671405411-3vivk7m5p04pjvl1olqnorv6dgi5hi0n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCU1sJpRdJNmuHmozHM-gSs_kFVBKjJEW4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "682671405411-3vivk7m5p04pjvl1olqnorv6dgi5hi0n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

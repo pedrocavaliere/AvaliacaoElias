@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:clickable="true"
+    card_view:cardCornerRadius="2dp"
+    card_view:cardElevation="2dp"
+    card_view:contentPadding="20dp"
+    >
+    <RelativeLayout
+        android:layout_width="351dp"
+        android:layout_height="93dp">
+        
+        <android.support.v4.widget.CircleImageView
+            android:id="@+id/ImageView_recyclerUser"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"/>
+        <TextView
+            android:id="@+id/nome_recyclerUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_toEndOf="@+id/ImageView_recyclerUser"
+            android:layout_toRightOf="@+id/ImageView_recyclerUser"/>
+
+        <TextView
+            android:id="@+id/email_recyclerUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@android:color/black"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ImageView_recyclerUser"
+            android:layout_toEndOf="@+id/ImageView_recyclerUser" />
+
+    </RelativeLayout>
+    
+    
+
+</android.support.v7.widget.CardView>

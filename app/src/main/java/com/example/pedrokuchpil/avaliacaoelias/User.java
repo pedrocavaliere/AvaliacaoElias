@@ -5,6 +5,12 @@ package com.example.pedrokuchpil.avaliacaoelias;
  */
 
 public class User {
+    public User(String userAdress, String userName, String userEmail) {
+        this.userAdress = userAdress;
+        this.userName = userName;
+        this.userEmail = userEmail;
+    }
+
     public String getUserName() {
         return userName;
     }
@@ -21,5 +27,16 @@ public class User {
         this.userEmail = userEmail;
     }
 
-    private String userName, userEmail;
+    public String getUserAdress() {
+        return userAdress;
+    }
+
+    public void setUserAdress(String userAdress) {
+        this.userAdress = userAdress;
+    }
+
+    private String userAdress;
+    private String userName;
+    private String userEmail;
+
 }

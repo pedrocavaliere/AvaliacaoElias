@@ -19,11 +19,12 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import static com.example.pedrokuchpil.avaliacaoelias.R.id.adress_recyclerUser;
 import static com.example.pedrokuchpil.avaliacaoelias.R.id.inputEmail;
 
 public class SignupActivity extends AppCompatActivity {
 
-    EditText emailSignup, senhaSignup, nomeSignup;
+    EditText emailSignup, senhaSignup, nomeSignup, enderecoSignup, telefoneSignup;
     Button criarConta;
     User user;
 
@@ -35,6 +36,8 @@ public class SignupActivity extends AppCompatActivity {
         user = new User();
         user.setUserName(nomeSignup.getText().toString());
         user.setUserEmail(emailSignup.getText().toString());
+        user.setUserAdress(enderecoSignup.getText().toString());
+        user.setUserPhone(telefoneSignup.getText().toString());
     }
     private void createNewAccount(String email, String password){
         if(!validateForm()){
@@ -56,16 +59,20 @@ public class SignupActivity extends AppCompatActivity {
     }
 
     private void onAuthenticationSuccess(FirebaseUser myUser){
-        saveNewUser(myUser.getUid(), user.getUserName(), user.getUserEmail());
+        saveNewUser(myUser.getUid(), user.getUserName(), user.getUserEmail(), user.getUserAdress(), user.getUserPhone());
 
         startActivity(new Intent(SignupActivity.this, MainActivity.class));
         finish();
     }
 
-    private void saveNewUser(String userId, String name, String email) {
-        User user = new User(userId, name, email);
+    private void saveNewUser(String userId, String name, String email, String adress , String phone) {
+        User user = new User(userId, name, email, adress, phone);
 
         myRef.child(userId).child("nome").setValue(user.getUserName());
+        myRef.child(userId).child("email").setValue(user.getUserEmail());
+        myRef.child(userId).child("endereco").setValue(user.getUserAdress());
+        myRef.child(userId).child("telefone").setValue(user.getUserPhone());
+
     }
 
     private boolean validateForm() {
@@ -101,6 +108,22 @@ public class SignupActivity extends AppCompatActivity {
             senhaSignup.setError(null);
         }
 
+        String userAdress = enderecoSignup.getText().toString();
+        if(TextUtils.isEmpty(userAdress)){
+            enderecoSignup.setError("Required");
+            valid = false;
+        }else{
+            enderecoSignup.setError(null);
+        }
+
+        String userPhone = telefoneSignup.getText().toString();
+        if(TextUtils.isEmpty(userPhone)){
+            telefoneSignup.setError("Required");
+            valid = false;
+        }else{
+            telefoneSignup.setError(null);
+        }
+
         return valid;
     }
 
@@ -115,6 +138,8 @@ public class SignupActivity extends AppCompatActivity {
         emailSignup = (EditText) findViewById(R.id.emailSignup);
         senhaSignup = (EditText) findViewById(R.id.senhaSignup);
         nomeSignup = (EditText) findViewById(R.id.nomeSignup);
+        enderecoSignup = (EditText) findViewById(R.id.enderecoSignup);
+        telefoneSignup = (EditText) findViewById(R.id.telefoneSignup);
 
         criarConta = (Button) findViewById(R.id.buttonCriarSignup);
 

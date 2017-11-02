@@ -10,23 +10,26 @@ public class User {
     private String userAdress;
     private String userName;
     private String userEmail;
+    private String userPhone;
     private String id;
 
 
-    public User(String userAdress, String userName, String userEmail) {
-        this.userAdress = userAdress;
+    public User(String userName, String userEmail, String userAdress,  String userPhone) {
         this.userName = userName;
         this.userEmail = userEmail;
+        this.userAdress = userAdress;
+        this.userPhone = userPhone;
     }
 
     public User (){
     }
 
-    public User(String id, String userAdress, String userName, String userEmail) {
+    public User(String id, String userName, String userEmail, String userAdress, String userPhone) {
         this.id = id;
-        this.userAdress = userAdress;
         this.userName = userName;
         this.userEmail = userEmail;
+        this.userAdress = userAdress;
+        this.userPhone = userPhone;
     }
 
 
@@ -54,6 +57,13 @@ public class User {
         this.userAdress = userAdress;
     }
 
+    public String getUserPhone(){
+        return userPhone;
+    }
+
+    public void setUserPhone(String userPhone) {
+        this.userPhone = userPhone;
+    }
 
 
 }

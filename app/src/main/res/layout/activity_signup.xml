@@ -10,7 +10,7 @@
         android:layout_width="368dp"
         android:layout_height="495dp"
         tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="16dp">
+        tools:layout_editor_absoluteY="8dp">
 
         <Button
             android:id="@+id/buttonCriarSignup"
@@ -18,7 +18,7 @@
             android:layout_height="48dp"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="142dp"
+            android:layout_marginBottom="57dp"
             android:text="Criar conta"
             tools:layout_editor_absoluteX="76dp"
             tools:layout_editor_absoluteY="322dp" />
@@ -27,40 +27,65 @@
             android:id="@+id/emailSignup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/senhaSignup"
-            android:layout_alignLeft="@+id/senhaSignup"
-            android:layout_alignStart="@+id/senhaSignup"
-            android:layout_marginBottom="21dp"
             android:ems="10"
             android:hint="Email"
             android:inputType="textEmailAddress"
             tools:layout_editor_absoluteX="85dp"
-            tools:layout_editor_absoluteY="133dp" />
+            tools:layout_editor_absoluteY="133dp"
+            android:layout_above="@+id/senhaSignup"
+            android:layout_alignLeft="@+id/senhaSignup"
+            android:layout_alignStart="@+id/senhaSignup"
+            android:layout_marginBottom="15dp" />
 
         <EditText
             android:id="@+id/senhaSignup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/buttonCriarSignup"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="21dp"
             android:ems="10"
             android:hint="Senha"
             android:inputType="textPassword"
             tools:layout_editor_absoluteX="85dp"
-            tools:layout_editor_absoluteY="222dp" />
+            tools:layout_editor_absoluteY="222dp"
+            android:layout_above="@+id/enderecoSignup"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp" />
 
         <EditText
             android:id="@+id/nomeSignup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="29dp"
             android:ems="10"
             android:hint="Nome"
             android:inputType="textPersonName"
+            android:layout_marginBottom="15dp"
             android:layout_above="@+id/emailSignup"
             android:layout_alignLeft="@+id/emailSignup"
             android:layout_alignStart="@+id/emailSignup" />
+
+        <EditText
+            android:id="@+id/enderecoSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Endereço"
+            android:inputType="textPersonName"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/senhaSignup"
+            android:layout_alignStart="@+id/senhaSignup" />
+
+        <EditText
+            android:id="@+id/telefoneSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Telefone"
+            android:inputType="phone"
+            tools:layout_editor_absoluteX="85dp"
+            tools:layout_editor_absoluteY="273dp"
+            android:layout_below="@+id/enderecoSignup"
+            android:layout_alignLeft="@+id/enderecoSignup"
+            android:layout_alignStart="@+id/enderecoSignup"
+            android:layout_marginTop="22dp" />
     </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>

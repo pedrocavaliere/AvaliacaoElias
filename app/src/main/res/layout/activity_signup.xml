@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pedrokuchpil.avaliacaoelias.SignupActivity">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <Button
+            android:id="@+id/buttonCriarSignup"
+            android:layout_width="232dp"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="142dp"
+            android:text="Criar conta"
+            tools:layout_editor_absoluteX="76dp"
+            tools:layout_editor_absoluteY="322dp" />
+
+        <EditText
+            android:id="@+id/emailSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/senhaSignup"
+            android:layout_alignLeft="@+id/senhaSignup"
+            android:layout_alignStart="@+id/senhaSignup"
+            android:layout_marginBottom="21dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            tools:layout_editor_absoluteX="85dp"
+            tools:layout_editor_absoluteY="133dp" />
+
+        <EditText
+            android:id="@+id/senhaSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buttonCriarSignup"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="21dp"
+            android:ems="10"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            tools:layout_editor_absoluteX="85dp"
+            tools:layout_editor_absoluteY="222dp" />
+
+        <EditText
+            android:id="@+id/nomeSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="29dp"
+            android:ems="10"
+            android:hint="Nome"
+            android:inputType="textPersonName"
+            android:layout_above="@+id/emailSignup"
+            android:layout_alignLeft="@+id/emailSignup"
+            android:layout_alignStart="@+id/emailSignup" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

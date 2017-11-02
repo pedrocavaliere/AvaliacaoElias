@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pedrokuchpil.avaliacaoelias.LoginActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <EditText
+            android:id="@+id/inputEmail"
+            android:layout_width="273dp"
+            android:layout_height="49dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            tools:layout_editor_absoluteX="56dp"
+            tools:layout_editor_absoluteY="175dp"
+            android:layout_marginBottom="36dp"
+            android:layout_above="@+id/inputSenha"
+            android:layout_alignRight="@+id/inputSenha"
+            android:layout_alignEnd="@+id/inputSenha" />
+
+        <EditText
+            android:id="@+id/inputSenha"
+            android:layout_width="272dp"
+            android:layout_height="47dp"
+            android:ems="10"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            tools:layout_editor_absoluteX="56dp"
+            tools:layout_editor_absoluteY="232dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/criarConta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Criar conta"
+            tools:layout_editor_absoluteX="158dp"
+            tools:layout_editor_absoluteY="394dp"
+            android:layout_marginBottom="72dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="180dp"
+            android:layout_height="48dp"
+            android:text="Button"
+            tools:layout_editor_absoluteX="102dp"
+            tools:layout_editor_absoluteY="305dp"
+            android:layout_below="@+id/inputSenha"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="49dp" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

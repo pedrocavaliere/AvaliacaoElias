@@ -5,11 +5,30 @@ package com.example.pedrokuchpil.avaliacaoelias;
  */
 
 public class User {
+
+
+    private String userAdress;
+    private String userName;
+    private String userEmail;
+    private String id;
+
+
     public User(String userAdress, String userName, String userEmail) {
         this.userAdress = userAdress;
         this.userName = userName;
         this.userEmail = userEmail;
     }
+
+    public User (){
+    }
+
+    public User(String id, String userAdress, String userName, String userEmail) {
+        this.id = id;
+        this.userAdress = userAdress;
+        this.userName = userName;
+        this.userEmail = userEmail;
+    }
+
 
     public String getUserName() {
         return userName;
@@ -35,8 +54,6 @@ public class User {
         this.userAdress = userAdress;
     }
 
-    private String userAdress;
-    private String userName;
-    private String userEmail;
+
 
 }

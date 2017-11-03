@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         list = new ArrayList<>();
+        recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
 
         auth = FirebaseAuth.getInstance();
         add = (Button) findViewById(R.id.addContactButton);
@@ -59,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
                     list.add(user);
                 }
                 adapter = new UserAdapter(list, MainActivity.this);
+                recyclerView.setAdapter(adapter);
 
             }
 
@@ -67,7 +69,6 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-        recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(false);
 
         GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 1);

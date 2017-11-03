@@ -68,10 +68,10 @@ public class SignupActivity extends AppCompatActivity {
     private void saveNewUser(String userId, String name, String email, String adress , String phone) {
         User user = new User(userId, name, email, adress, phone);
 
-        myRef.child(userId).child("nome").setValue(user.getUserName());
-        myRef.child(userId).child("email").setValue(user.getUserEmail());
-        myRef.child(userId).child("endereco").setValue(user.getUserAdress());
-        myRef.child(userId).child("telefone").setValue(user.getUserPhone());
+        myRef.child(userId).child("userAdress").setValue(user.getUserAdress());
+        myRef.child(userId).child("userEmail").setValue(user.getUserEmail());
+        myRef.child(userId).child("userName").setValue(user.getUserName());
+        myRef.child(userId).child("userPhone").setValue(user.getUserPhone());
 
     }
 

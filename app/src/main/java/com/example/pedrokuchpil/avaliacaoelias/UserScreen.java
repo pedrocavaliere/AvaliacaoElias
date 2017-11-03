@@ -36,7 +36,7 @@ public class UserScreen extends AppCompatActivity {
     }
 
     private void retorna(){
-        addUser(name.getText().toString(), email.getText().toString(), adress.getText().toString(), phone.getText().toString());
+        addUser(name.getText().toString(),  adress.getText().toString(), phone.getText().toString(), email.getText().toString());
     }
     private void addUser(String name,
                          String adress,

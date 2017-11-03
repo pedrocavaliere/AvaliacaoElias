@@ -55,12 +55,12 @@
             android:id="@+id/buttonLogin"
             android:layout_width="180dp"
             android:layout_height="48dp"
-            android:text="Button"
-            tools:layout_editor_absoluteX="102dp"
-            tools:layout_editor_absoluteY="305dp"
             android:layout_below="@+id/inputSenha"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="49dp" />
+            android:layout_marginTop="49dp"
+            android:text="Login"
+            tools:layout_editor_absoluteX="102dp"
+            tools:layout_editor_absoluteY="305dp" />
     </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>

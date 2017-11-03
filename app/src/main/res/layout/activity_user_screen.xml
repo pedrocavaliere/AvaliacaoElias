@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pedrokuchpil.avaliacaoelias.UserScreen">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="2dp">
+        <EditText
+            android:id="@+id/emailUserScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            tools:layout_editor_absoluteX="85dp"
+            tools:layout_editor_absoluteY="133dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+        <EditText
+            android:id="@+id/nomeUserScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nome"
+            android:inputType="textPersonName"
+            android:layout_below="@+id/telefoneUserScreen"
+            android:layout_alignLeft="@+id/telefoneUserScreen"
+            android:layout_alignStart="@+id/telefoneUserScreen"
+            android:layout_marginTop="37dp" />
+        <EditText
+            android:id="@+id/enderecoUserScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/emailUserScreen"
+            android:layout_alignStart="@+id/emailUserScreen"
+            android:layout_below="@+id/emailUserScreen"
+            android:layout_marginTop="31dp"
+            android:ems="10"
+            android:hint="Endereço"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/telefoneUserScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/enderecoUserScreen"
+            android:layout_alignStart="@+id/enderecoUserScreen"
+            android:layout_below="@+id/enderecoUserScreen"
+            android:layout_marginTop="22dp"
+            android:ems="10"
+            android:hint="Telefone"
+            android:inputType="phone"
+            tools:layout_editor_absoluteX="85dp"
+            tools:layout_editor_absoluteY="273dp" />
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:text="Adicionar" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

@@ -14,14 +14,6 @@
         android:layout_width="351dp"
         android:layout_height="93dp">
 
-        <android.support.v4.widget.CircleImageView
-            android:id="@+id/ImageView_recyclerUser"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginEnd="15dp"
-            android:layout_marginRight="15dp" />
-
         <TextView
             android:id="@+id/nome_recyclerUser"
             android:layout_width="wrap_content"
@@ -52,14 +44,26 @@
             android:id="@+id/adress_recyclerUser"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:maxLines="1"
             android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Adress"
             android:textSize="14sp"
-            android:layout_below="@+id/ImageView_recyclerUser"
-            android:layout_toEndOf="@+id/ImageView_recyclerUser"
-            android:layout_toRightOf="@+id/ImageView_recyclerUser"
-            android:text="TextView" />
+            android:layout_below="@+id/email_recyclerUser"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="11dp" />
+
+        <TextView
+            android:id="@+id/phone_recyclerUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="109dp"
+            android:layout_marginStart="109dp"
+            android:text="Celular"
+            android:layout_alignBaseline="@+id/email_recyclerUser"
+            android:layout_alignBottom="@+id/email_recyclerUser"
+            android:layout_toRightOf="@+id/nome_recyclerUser"
+            android:layout_toEndOf="@+id/nome_recyclerUser" />
 
     </RelativeLayout>
 
